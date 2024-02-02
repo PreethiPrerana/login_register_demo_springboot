@@ -9,8 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.demo.User;
-import com.example.demo.UserRepository;
+import com.example.demo.entity.User;
+import com.example.demo.repository.UserRepository;
 
 @Controller
 public class AppController {

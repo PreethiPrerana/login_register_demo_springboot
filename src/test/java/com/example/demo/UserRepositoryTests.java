@@ -9,6 +9,9 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.annotation.Rollback;
+
+import com.example.demo.entity.User;
+import com.example.demo.repository.UserRepository;
  
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
