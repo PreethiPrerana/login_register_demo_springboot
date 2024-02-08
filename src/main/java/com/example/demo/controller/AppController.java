@@ -30,6 +30,11 @@ public class AppController {
         return "signup_form";
     }
 
+    @GetMapping("/login")
+    public String showLoginPage() {
+        return "custom_login";
+    }
+
     @PostMapping("/process_register")
     public String processRegister(User user) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();

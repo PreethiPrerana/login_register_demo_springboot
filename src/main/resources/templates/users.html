@@ -10,7 +10,7 @@
 <body>
 <div class="container text-center">
     <div>
-        <form th:action="@{/logout}" method="post">
+        <form th:action="@{/logout}" method="post" th:csrf>
             <p>
                 Welcome <b><span sec:authentication="principal.fullName"></span></b>
             </p>
